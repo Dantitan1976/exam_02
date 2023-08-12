@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/12 09:44:27 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/12 11:07:38 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/12 11:41:16 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,7 @@ int	ft_wdmatch(char *str1, char *str2)
 		else
 			pos_str2++;
 	}
-	pos_str1 = ft_strlen (str2);
-	return (pos_str1);
+	return (pos_str1 == ft_strlen (str1));
 }
 
 int	main(int argc, char **argv)
