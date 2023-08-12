@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/06 18:21:55 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/06 18:42:43 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/12 12:39:46 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(int argc, char **argv)
 {
-	int pos;
+	int	pos;
 
 	if (argc == 2)
 	{

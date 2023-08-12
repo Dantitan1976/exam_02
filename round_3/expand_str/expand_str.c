@@ -1,59 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   wdmatch.c                                          :+:      :+:    :+:   */
+/*   expand_str.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/12 09:44:27 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/12 12:40:40 by dramirez         ###   ########.fr       */
+/*   Created: 2023/08/12 17:28:13 by dramirez          #+#    #+#             */
+/*   Updated: 2023/08/12 17:51:16 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_strlen(char *str)
+int	ft_isspace(char c)
+{
+	if (c == 32 || (c >= 9 && c <= 13))
+		return (1);
+	else
+		return (0);
+}
+
+void	ft_expand(char *str)
 {
 	int	pos;
 
 	pos = 0;
 	while (str[pos])
-		pos++;
-	return (pos);
-}
-
-void	ft_putstr(char *str)
-{
-	write (1, str, ft_strlen(str));
-}
-
-int	ft_wdmatch(char *str1, char *str2)
-{
-	int	pos_str1;
-	int	pos_str2;
-
-	pos_str1 = 0;
-	pos_str2 = 0;
-	while (str2[pos_str2])
 	{
-		if (str1[pos_str1] == str2[pos_str2])
+		while (str[pos] && ft_isspace(str[pos]))
+			pos++;
+		while (str[pos] && !ft_isspace(str[pos]))
 		{
-			pos_str1++;
-			pos_str2++;
+			write (1, &str[pos], 1);
+			pos++;
 		}
-		else
-			pos_str2++;
+		if (ft_isspace(str[pos]) && str[pos + 1] != '\0')
+		{
+			write (1, "   ", 3);
+			pos++;
+		}
 	}
-	return (pos_str1 == ft_strlen (str1));
 }
 
 int	main(int argc, char **argv)
 {
-	if (argc == 3)
-	{
-		if (ft_wdmatch(argv[1], argv[2]))
-			ft_putstr(argv[1]);
-	}
+	if (argc == 2)
+		ft_expand(argv[1]);
 	write(1, "\n", 1);
 	return (0);
 }

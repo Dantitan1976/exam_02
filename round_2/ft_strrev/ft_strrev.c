@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/29 22:56:57 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/30 00:10:51 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/12 12:29:12 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ int	ft_strlen(char *str)
 
 char	*ft_strrev(char *str)
 {
-	int	pos;
-	int	pos_last_char;
+	int		pos;
+	int		pos_last_char;
 	char	c;
-	
+
 	pos = 0;
 	pos_last_char = ft_strlen(str);
 	while (pos < (pos_last_char / 2))
@@ -40,7 +40,7 @@ char	*ft_strrev(char *str)
 	}
 	return (str);
 }
-	
+
 int	main(int argc, char **argv)
 {
 	char	*str;

@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 21:40:03 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/02 22:01:52 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/12 12:31:49 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	char_in_str(char c, char *str)
 {
-	int pos;
+	int	pos;
 
 	pos = 0;
 	while (str[pos])
 	{
-		if(str[pos] == c)
+		if (str[pos] == c)
 			return (1);
 		pos++;
 	}
@@ -28,12 +28,12 @@ int	char_in_str(char c, char *str)
 
 int	pos_char_in_str(char c, char *str)
 {
-	int pos;
+	int	pos;
 
 	pos = 0;
 	while (str[pos])
 	{
-		if(str[pos] == c)
+		if (str[pos] == c)
 			return (pos);
 		pos++;
 	}
@@ -47,7 +47,7 @@ void	ft_inter(char *str1, char *str2)
 	pos = 0;
 	while (str1[pos])
 	{
-		if(pos_char_in_str(str1[pos], str1) >= pos)
+		if (pos_char_in_str(str1[pos], str1) >= pos)
 			if (char_in_str(str1[pos], str2))
 				write(1, &str1[pos], 1);
 		pos++;

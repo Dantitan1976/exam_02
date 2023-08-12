@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/06 19:38:17 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/06 21:39:07 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/12 12:37:06 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,15 +47,15 @@ void	ft_union(char *str1, char *str2)
 	pos = 0;
 	while (str1[pos])
 	{
-		if(pos_char_in_str(str1[pos], str1) >= pos)
+		if (pos_char_in_str(str1[pos], str1) >= pos)
 			write(1, &str1[pos], 1);
 		pos++;
 	}
 	pos = 0;
 	while (str2[pos])
 	{
-		if (!char_in_str(str2[pos], str1) &&
-				pos_char_in_str(str2[pos], str2) >= pos)
+		if (!char_in_str(str2[pos], str1)
+			&& pos_char_in_str(str2[pos], str2) >= pos)
 			write (1, &str2[pos], 1);
 		pos++;
 	}

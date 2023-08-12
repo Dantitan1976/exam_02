@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 22:31:35 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/02 22:43:38 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/12 12:32:42 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	is_power_of_2(unsigned int n)
 	while (n > 1)
 	{
 		if (n % 2 == 0)
-			n = n /2;
+			n = n / 2;
 		else
 			return (0);
 	}

@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/05 19:58:44 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/05 20:19:16 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/12 12:34:37 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	print_bits(unsigned char octet)
 	}
 }
 
-int	main (int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	unsigned char	num;
 	unsigned char	rev_num;
