@@ -6,13 +6,11 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 09:07:09 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/13 12:13:22 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/13 18:39:27 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_list_size(t_list *begin_list)
 {
