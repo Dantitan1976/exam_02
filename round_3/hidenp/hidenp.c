@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   hidenp.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 19:09:46 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/13 19:30:32 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/15 18:58:24 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,3 @@ int	main(int argc, char **argv)
 	write (1, "\n", 1);
 	return (0);
 }
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_hex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 10:11:39 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/14 10:43:30 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/15 18:59:36 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,3 @@ int	main(int argc, char **argv)
 		print_hex(ft_atoi_num(argv[1]));
 	write (1, "\n", 1);
 }
-

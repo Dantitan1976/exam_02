@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 18:46:44 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/13 19:04:44 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/15 18:57:38 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	main(int argc, char **argv)
 	int	cad_long;
 	int	*cad;
 	int	pos;
-	
+
 	if (argc == 3)
 	{
 		cad_long = abs(atoi(argv[2]) - atoi(argv[1]));

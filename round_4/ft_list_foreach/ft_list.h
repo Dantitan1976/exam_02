@@ -1,38 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   paramsum.c                                         :+:      :+:    :+:   */
+/*   ft_list.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/13 20:23:25 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/15 18:59:00 by dramirez         ###   ########.fr       */
+/*   Created: 2023/08/15 11:57:48 by dramirez          #+#    #+#             */
+/*   Updated: 2023/08/15 19:33:39 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_LIST_H
+# define FT_LIST_H
 
-void	ft_putnbr(int n)
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+
+typedef struct s_list
 {
-	char	num;
+	struct s_list	*next;
+	void			*data;
+}			t_list;
 
-	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-		num = (n % 10) + '0';
-		write (1, &num, 1);
-	}
-	else
-	{
-		num = n + '0';
-		write (1, &num, 1);
-	}
-}
-
-int	main(int argc, char **argv)
-{
-	(void)argv;
-	ft_putnbr(argc - 1);
-	write (1, "\n", 1);
-	return (0);
-}
+#endif

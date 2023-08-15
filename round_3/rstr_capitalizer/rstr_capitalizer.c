@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rstr_capitalizer.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 11:02:37 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/14 13:50:53 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/15 19:00:41 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,14 +44,14 @@ void	rstr_capitalizer(char *str)
 	pos = 0;
 	while (str[pos])
 	{
-		if (lower(str[pos]) &&
-			(space(str[pos + 1]) || str[pos + 1] == '\0'))
+		if (lower(str[pos])
+			&& (space(str[pos + 1]) || str[pos + 1] == '\0'))
 		{
 			c = str[pos] - 32;
 			write (1, &c, 1);
 		}
-		else if (upper(str[pos]) &&
-			(lower(str[pos + 1]) || upper(str[pos + 1])))
+		else if (upper(str[pos])
+			&& (lower(str[pos + 1]) || upper(str[pos + 1])))
 		{
 			c = str[pos] + 32;
 			write (1, &c, 1);

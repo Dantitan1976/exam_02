@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   str_capitalizer.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 13:56:00 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/14 14:36:59 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/15 19:10:31 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,7 @@ void	str_capitalizer(char *str)
 	pos = 0;
 	while (str[pos])
 	{
-		if ((lower(str[pos]) && (space(str[pos + 1]) &&
-				space(str[pos - 1])))
+		if ((lower(str[pos]) && (space(str[pos + 1]) && space(str[pos - 1])))
 			|| (lower(str[pos]) && (space(str[pos - 1])))
 			|| (pos == 0 && lower(str[pos])))
 		{
@@ -65,7 +64,7 @@ void	str_capitalizer(char *str)
 
 int	main(int argc, char **argv)
 {
-	int arg;
+	int	arg;
 
 	if (argc > 1)
 	{
@@ -81,6 +80,3 @@ int	main(int argc, char **argv)
 	write (1, "\n", 1);
 	return (0);
 }
-
-
-
