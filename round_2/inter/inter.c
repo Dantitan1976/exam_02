@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 21:40:03 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/12 12:31:49 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/17 19:05:25 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,43 +14,47 @@
 
 int	char_in_str(char c, char *str)
 {
-	int	pos;
+	int	pos_char;
 
-	pos = 0;
-	while (str[pos])
+	pos_char = 0;
+	while (str[pos_char])
 	{
-		if (str[pos] == c)
+		if (str[pos_char] == c)
 			return (1);
-		pos++;
+		pos_char++;
 	}
 	return (0);
 }
 
 int	pos_char_in_str(char c, char *str)
 {
-	int	pos;
+	int	pos_char;
 
-	pos = 0;
-	while (str[pos])
+	pos_char = 0;
+	while (str[pos_char])
 	{
-		if (str[pos] == c)
-			return (pos);
-		pos++;
+		if (str[pos_char] == c)
+			return (pos_char);
+		pos_char++;
 	}
-	return (pos);
+	return (pos_char);
 }
 
 void	ft_inter(char *str1, char *str2)
 {
-	int	pos;
+	int	pos_inter;
+	char	c;
 
-	pos = 0;
-	while (str1[pos])
+	pos_inter = 0;
+	while (str1[pos_inter])
 	{
-		if (pos_char_in_str(str1[pos], str1) >= pos)
-			if (char_in_str(str1[pos], str2))
-				write(1, &str1[pos], 1);
-		pos++;
+		if (pos_char_in_str(str1[pos_inter], str1) >= pos_inter)
+			if (char_in_str(str1[pos_inter], str2))
+			{
+				c = str1[pos_inter];
+				write(1, &c, 1);
+			}
+		pos_inter++;
 	}
 }
 

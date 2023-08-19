@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 12:17:01 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/13 18:22:40 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/19 18:38:54 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,10 @@ int	*ft_range(int start, int end)
 	int	*num;
 	int	size;
 
-	size = abs((end - start)) + 1;
+	if (end - start < 0)
+		size = ((end - start) * -1) + 1;
+	else
+		size = (end - start) + 1;
 	num = malloc(size * sizeof(int));
 	if (!num)
 		return (NULL);
