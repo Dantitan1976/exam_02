@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 22:14:56 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/28 23:17:26 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/24 19:11:04 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,17 @@ char	*ft_strdup(char *src)
 
 int	main(int argc, char **argv)
 {
+	char	*original;
+	char	*duplicada;
+
 	if (argc == 2)
 	{
+		original = argv[1];
+		duplicada = ft_strdup(argv[1]);
 		printf("Cadena src: %s\n", argv[1]);
-		printf("Cadena dest strdup: %s\n", strdup(argv[1]));
-		printf("Cadena dest ft_strdup: %s\n", ft_strdup(argv[1]));
-		return (0);
+		printf("Cadena dest strdup: %s\n", strdup(original));
+		printf("Cadena dest ft_strdup: %s\n", duplicada);
+		free (duplicada);
 	}
+	return (0);
 }

@@ -6,10 +6,11 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 12:47:58 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/23 14:07:57 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/24 16:25:32 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -40,12 +41,17 @@ int	ft_atoi(const char *str)
 	return (num * sig);
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
 	char	*str;
 
-	str = "+945";
-	printf("Con atoi\nCadena: %s, numero: %i\n", str, atoi(str));
-	printf("Con ft_atoi\nCadena: %s, numero: %i\n", str, ft_atoi(str));
+	if (argc == 2)
+	{
+		str = argv[1];
+		printf("Con atoi. Cadena: %s, numero: %i\n", str, atoi(str));
+		printf("Con ft_atoi. Cadena: %s, numero: %i\n", str, ft_atoi(str));
+	}
+	else
+		write(1, "\n", 1);
 	return (0);
 }

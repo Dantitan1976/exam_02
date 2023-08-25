@@ -6,11 +6,12 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 09:03:12 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/15 09:11:01 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/22 20:13:20 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void	ft_swap(int *a, int *b)
 {
@@ -21,18 +22,22 @@ void	ft_swap(int *a, int *b)
 	*b = prov;
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
+	int	num_a;
+	int	num_b;
 	int	*a;
 	int	*b;
-	int	n1;
-	int	n2;
 
-	n1 = 10;
-	n2 = 25;
-	a = &n1;
-	b = &n2;
-	printf("El valor de n1 es: %u y el valor de n2 es: %u.\n", *a, *b);
-	ft_swap(a, b);
-	printf("Ahora el valor de n1 es: %u y el de n2 es: %u.\n", *a, *b);
+	if (argc == 3)
+	{
+		num_a = atoi(argv[1]);
+		num_b = atoi(argv[2]);
+		a = &num_a;
+		b = &num_b;
+		printf("El valor de a es %d, el de b es %d\n", *a, *b);
+		ft_swap(a, b);
+		printf("El valor de a es ahora %d y el de b es %d\n", *a, *b);
+	}
+	return (0);
 }

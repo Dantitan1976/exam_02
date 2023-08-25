@@ -6,7 +6,7 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 20:17:32 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/16 22:27:27 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/21 21:35:34 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_list	*sort_list(t_list *lst, int (*cmp)(int, int))
 	{
 		if ((*cmp)(lst->data, lst->next->data) == 0)
 		{
-			aux = lst->data;
+			aux = *(int *)lst->data;
 			lst->data = lst->next->data;
 			lst->next->data = aux;
 			lst = nodo;

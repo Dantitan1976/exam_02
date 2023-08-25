@@ -6,7 +6,7 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 19:40:18 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/15 20:30:13 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/20 13:01:06 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,8 @@ int	main(void)
 	test_list -> next -> next -> next = ft_new_elem("!");
 	ft_list_foreach(test_list, (void *)ft_putstr);
 	ft_putstr("\n");
-	ft_list_remove_if(begin_list, "!", ft_strcmp);
-	ft_putstr("Eliminando el (!)\n");
+	ft_list_remove_if(begin_list, "Malota", ft_strcmp);
+	ft_putstr("Eliminando (o)\n");
 	ft_list_foreach(test_list, (void *)ft_putstr);
 	ft_putstr("\n");
 }
