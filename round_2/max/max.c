@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   max.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/05 07:49:27 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/05 18:59:35 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/08/26 09:39:10 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,21 +34,26 @@ int	max(int *tab, unsigned int len)
 	return (max_val);
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
-	int	nums[10] = {1, 5, 7, -80, 123, 42, -42, 66, 69, 10};
-	int	num_max;
-	int	pos;
+	int				max_val;
+	unsigned int	len;
+	int				*tab;
+	unsigned int	pos;
 
-	pos = 0;
-	printf("Números: ");
-	while (pos < 10)
+	if (argc >= 2)
 	{
-		printf(" %d; ", nums[pos]);
-		pos++;
+		len = argc - 1;
+		tab = (int *)malloc(len * sizeof(int));
+		pos = 0;
+		while (pos < len)
+		{
+			tab[pos] = atoi(argv[pos + 1]);
+			pos++;
+		}
+		max_val = max(tab, len);
+		printf("El valor máximo es: %d\n", max_val);
+		free(tab);
 	}
-	printf("\n");
-	num_max = max(nums, 10);
-	printf("Número máximo: %d\n", num_max);
 	return (0);
 }

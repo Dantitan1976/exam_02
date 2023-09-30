@@ -6,7 +6,7 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 13:56:00 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/15 19:10:31 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/09/30 23:42:04 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,9 @@ void	str_capitalizer(char *str)
 	pos = 0;
 	while (str[pos])
 	{
-		if ((lower(str[pos]) && (space(str[pos + 1]) && space(str[pos - 1])))
+		if (pos == 0 && upper(str[pos]))
+			write (1, &str[pos], 1);
+		else if ((lower(str[pos]) && (space(str[pos + 1]) && space(str[pos - 1])))
 			|| (lower(str[pos]) && (space(str[pos - 1])))
 			|| (pos == 0 && lower(str[pos])))
 		{
