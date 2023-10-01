@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   is_power_of_2.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 22:31:35 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/12 12:32:42 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/10/01 09:16:51 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,12 @@ int	is_power_of_2(unsigned int n)
 {
 	if (n == 0)
 		return (0);
-	while (n > 1)
-	{
-		if (n % 2 == 0)
-			n = n / 2;
-		else
-			return (0);
-	}
-	return (1);
+	while (n % 2 == 0)
+		n = n / 2;
+	if (n == 1)
+		return (1);
+	else
+		return (0);
 }
 
 int	main(int argc, char **argv)
