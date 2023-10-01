@@ -3,33 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   fizzbuzz.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez <dramirez@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 20:56:05 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/14 21:31:48 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/10/01 08:39:03 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_putnbr(int n)
+void	ft_putchar(char c)
 {
-	int	dec;
-	int	units;
+	write(1, &c, 1);
+}
 
-	if (n > 10)
-	{
-		dec = n / 10 + '0';
-		units = n % 10 + '0';
-		write(1, &dec, 1);
-		write(1, &units, 1);
-	}
-	else
-	{
-		units = n + '0';
-		write (1, &units, 1);
-	}
-	return (n);
+void	ft_putnbr(int n)
+{
+	if (n >= 10)
+		ft_putnbr(n / 10);
+	ft_putchar(n % 10 + '0');
 }
 
 int	main(void)
