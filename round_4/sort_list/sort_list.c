@@ -6,11 +6,11 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 20:17:32 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/21 21:35:34 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/10/01 19:37:28 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_list.h"
+#include "list.h"
 #include <stdio.h>
 #include <stdlib.h>
 

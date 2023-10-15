@@ -3,49 +3,47 @@
 /*                                                        :::      ::::::::   */
 /*   expand_str.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/12 17:28:13 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/12 17:51:16 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/10/15 19:54:11 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_isspace(char c)
+int	blank(char c)
 {
-	if (c == 32 || (c >= 9 && c <= 13))
+	if (c == ' ' || (c >= 9 && c <= 13))
 		return (1);
 	else
 		return (0);
 }
 
-void	ft_expand(char *str)
+int	main(int argc, char **argv)
 {
 	int	pos;
+	int	flag;
 
 	pos = 0;
-	while (str[pos])
+	if (argc == 2)
 	{
-		while (str[pos] && ft_isspace(str[pos]))
+		while (argv[1][pos] && blank(argv[1][pos]))
 			pos++;
-		while (str[pos] && !ft_isspace(str[pos]))
+		while (argv[1][pos])
 		{
-			write (1, &str[pos], 1);
-			pos++;
-		}
-		if (ft_isspace(str[pos]) && str[pos + 1] != '\0')
-		{
-			write (1, "   ", 3);
+			if (blank(argv[1][pos]))
+				flag = 1;
+			if (!(blank(argv[1][pos])))
+			{
+				if (flag)
+					write (1, "   ", 3);
+				flag = 0;
+				write (1, &argv[1][pos], 1);
+			}
 			pos++;
 		}
 	}
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc == 2)
-		ft_expand(argv[1]);
-	write(1, "\n", 1);
+	write (1, "\n", 1);
 	return (0);
 }
