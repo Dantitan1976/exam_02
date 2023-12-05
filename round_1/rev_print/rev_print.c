@@ -6,7 +6,7 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 12:23:00 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/16 08:12:03 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/05 18:19:09 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,5 @@ int	main(int argc, char **argv)
 		}
 	}
 	write(1, "\n", 1);
+	return (0);
 }
