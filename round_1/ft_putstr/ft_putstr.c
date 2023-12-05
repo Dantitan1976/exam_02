@@ -6,7 +6,7 @@
 /*   By: dramirez <dramirez@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 21:40:51 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/14 21:50:47 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/05 13:52:08 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_putstr(char *str)
 	}
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	if (argc == 1)
 	{
@@ -36,4 +36,4 @@ int	main(int argc, char **argv)
 	ft_putstr(argv[1]);
 	printf("\n");
 	return (0);
-}
+}*/
