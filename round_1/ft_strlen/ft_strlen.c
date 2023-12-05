@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 08:53:40 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/15 09:09:19 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/05 17:56:08 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strlen(char *str)
 	return (pos);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	if (argc == 1)
 	{
@@ -31,4 +31,4 @@ int	main(int argc, char **argv)
 	}
 	printf("ft_strlen(\"%s\") = %d\n", argv[1], ft_strlen(argv[1]));
 	return (0);
-}
+}*/
