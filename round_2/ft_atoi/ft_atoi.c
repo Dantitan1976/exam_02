@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 12:47:58 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/24 16:25:32 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/30 08:41:25 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_atoi(const char *str)
 	return (num * sig);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	char	*str;
 
@@ -54,4 +54,4 @@ int	main(int argc, char **argv)
 	else
 		write(1, "\n", 1);
 	return (0);
-}
+}*/

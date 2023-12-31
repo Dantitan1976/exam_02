@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 22:14:56 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/24 19:11:04 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/30 20:28:01 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_strdup(char *src)
 	return (dest);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	char	*original;
 	char	*duplicada;
@@ -58,4 +58,4 @@ int	main(int argc, char **argv)
 		free (duplicada);
 	}
 	return (0);
-}
+}*/

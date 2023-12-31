@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 17:16:24 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/28 22:39:26 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/30 10:43:20 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	if (argc == 3)
 	{
@@ -38,4 +38,4 @@ int	main(int argc, char **argv)
 		printf("Diferencia ft_strcmp: %i\n", ft_strcmp(argv[1], argv[2]));
 		return (0);
 	}
-}
+}*/
