@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 00:50:10 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/30 01:24:18 by dramirez         ###   ########.fr       */
+/*   Updated: 2024/01/01 21:30:09 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,10 @@ int	main(int argc, char **argv)
 {
 	if (argc == 3)
 	{
-		printf("Chars a buscar: %s\n", argv[1]);
-		printf("Cadena donde buscamos: %s\n", argv[2]);
-		printf("Cantidad chars de la cadena");
-		printf(" hasta encontrar los");
-		printf(" char a buscar: %ld\n", strspn(argv[1], argv[2]));
+		printf("Chars a buscar, S1: %s\n", argv[1]);
+		printf("Cadena donde buscamos, S2: %s\n", argv[2]);
+		printf("Longitud de la cadena S1");
+		printf(" encontrados en S2: %ld\n", strspn(argv[1], argv[2]));
 		printf("Rdo. ft_strspn: %ld\n", ft_strspn(argv[1], argv[2]));
 	}
 	return (0);

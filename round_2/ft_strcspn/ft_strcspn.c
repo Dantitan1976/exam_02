@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 22:28:13 by dramirez          #+#    #+#             */
-/*   Updated: 2023/07/28 22:42:58 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/31 07:25:50 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ size_t	ft_strcspn(const char *s, const char *reject)
 	return (pos_s);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	if (argc == 3)
 	{
@@ -44,4 +44,4 @@ int	main(int argc, char **argv)
 		printf("ft_strcspn: %zu\n", ft_strcspn(argv[1], argv[2]));
 	}
 	return (0);
-}
+}*/

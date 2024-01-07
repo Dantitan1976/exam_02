@@ -6,7 +6,7 @@
 /*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/29 22:56:57 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/12 12:29:12 by dramirez         ###   ########.fr       */
+/*   Updated: 2023/12/31 07:56:52 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_strrev(char *str)
 	return (str);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	char	*str;
 
@@ -52,4 +52,4 @@ int	main(int argc, char **argv)
 		printf("Cadena ft_strrev: %s\n", str);
 	}
 	return (0);
-}
+}*/
