@@ -6,7 +6,7 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 22:31:35 by dramirez          #+#    #+#             */
-/*   Updated: 2023/10/01 09:16:51 by dramirez         ###   ########.fr       */
+/*   Updated: 2024/01/07 17:38:10 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	is_power_of_2(unsigned int n)
 		return (0);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	if (argc == 2)
 	{
@@ -33,4 +33,4 @@ int	main(int argc, char **argv)
 		printf("1 = Sí, 0 = No: %d\n", is_power_of_2(atoi(argv[1])));
 	}
 	return (0);
-}
+}*/

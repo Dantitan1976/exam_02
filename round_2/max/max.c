@@ -6,7 +6,7 @@
 /*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/05 07:49:27 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/26 09:39:10 by dramirez         ###   ########.fr       */
+/*   Updated: 2024/01/07 18:44:33 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	max(int *tab, unsigned int len)
 	return (max_val);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	int				max_val;
 	unsigned int	len;
@@ -56,4 +56,4 @@ int	main(int argc, char **argv)
 		free(tab);
 	}
 	return (0);
-}
+}*/
