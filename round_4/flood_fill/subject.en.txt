@@ -1,4 +1,4 @@
-ssignment name  : flood_fill
+Assignment name  : flood_fill
 Expected files   : *.c, *.h
 Allowed functions: -
 --------------------------------------------------------------------------------
