@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dramirez </var/mail/dramirez>              +#+  +:+       +#+        */
+/*   By: dramirez <dramirez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 08:17:01 by dramirez          #+#    #+#             */
-/*   Updated: 2023/08/15 11:46:12 by dramirez         ###   ########.fr       */
+/*   Updated: 2024/01/28 17:23:51 by dramirez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	*ft_itoa(int nbr)
 	return (res);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	char	*str;
 
@@ -77,4 +77,4 @@ int	main(int argc, char **argv)
 		free(str);
 	}
 	return (0);
-}
+}*/
